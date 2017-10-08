@@ -1,0 +1,9 @@
+<ul>
+	<li ng-repeat="getTodo in todo_list">
+		{{ getTodo.title }}
+		<ul>
+	        <li>{{ getTodo.desc }}</li>
+	    </ul>
+	    <button ng-click="todo_list.$remove(getTodo)">Delete</button>
+	</li>
+</ul>

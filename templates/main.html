@@ -1,0 +1,13 @@
+<form accept-charset="utf-8" style="max-width: 380px; margin: 0 auto; padding:20px;">
+	<div class="form-group">
+	    <label for="exampleInputEmail1">Title</label>
+	    <input ng-model="todo.title" type="text" class="form-control" placeholder="Enter To Do Title">
+  	</div>
+
+  	<div class="form-group">
+  		<label>Description</label>
+  		<input ng-model="todo.desc" type="text" class="form-control" placeholder="To Do Description">
+  	</div>
+
+  	<button ng-click="save_todo(todo)" class="btn btn-block btn-primary">Save</button>
+</form>
